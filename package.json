@@ -1,0 +1,27 @@
+{
+  "name": "@sm00th/cli",
+  "version": "0.0.1",
+  "description": "my project cli",
+  "main": "index.js",
+  "author": "wenwenhai",
+  "bin": {
+    "smooth": "bin/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1",
+    "download-git-repo": "^1.1.0",
+    "glob": "^7.1.2",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.2.0",
+    "ora": "^3.0.0"
+  }
+}
