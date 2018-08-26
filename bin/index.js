@@ -34,19 +34,4 @@ program
       run(anwsers)
     }
   })
-//  新建页面
-program
-  .command('mk-page <name>')
-  .action(async (name, cmd) => {
-    const dir = `src/pages/${name}`
-    if (fs.existsSync(dir)) {
-      log.error('项目已存在')
-      return process.exit(1)
-    }
-    const spinner = ora('正在下载模板...')
-    spinner.start()
-    await download({template: pageBoilerplate, name: dir})
-    await compile({name: dir})
-    spinner.stop('页面初始化完成')
-  })
 program.parse(process.argv)

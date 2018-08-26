@@ -1,6 +1,6 @@
 {
   "name": "@sm00th/cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "my project cli",
   "main": "index.js",
   "repository": "https://github.com/sm00thCr1m1n4l/cli.git",
