@@ -11,9 +11,5 @@ yarn global add  @sm00th/cli
 ```
 ### 项目生成
 ```shell
-smooth init {{name}}
-```
-### 新建目录
-```shell
-smooth mk-page {{name}}
+sm00th init {{name}}
 ```
