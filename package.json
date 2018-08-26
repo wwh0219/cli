@@ -1,11 +1,12 @@
 {
   "name": "@sm00th/cli",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "my project cli",
   "main": "index.js",
+  "repository": "https://github.com/sm00thCr1m1n4l/cli.git",
   "author": "wenwenhai",
   "bin": {
-    "smooth": "bin/index.js"
+    "sm00th": "bin/index.js"
   },
   "license": "MIT",
   "devDependencies": {
