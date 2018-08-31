@@ -1,5 +1,5 @@
 const inquirer = require('inquirer')
-const {projectBoilerplates}=require('./constant')
+const {projectBoilerplates} = require('./constant')
 module.exports = () => {
   return inquirer.prompt([
     {

@@ -9,7 +9,9 @@ const log = require('../util/chalk')
 const compile = require('./compile')
 const install = require('./install')
 const run = require('./run')
-const {pageBoilerplate} = require('./constant')
+const {projectBoilerplates} = require('./constant')
+const inquirer = require('inquirer')
+
 //  项目初始化
 program
   .version(`当前版本:${packageJson.version}`)
@@ -21,6 +23,14 @@ program
       return process.exit(1)
     }
     let anwsers = await ask()
+    if (anwsers.template === projectBoilerplates.find(item => item.alias === 'npm-lib').value) {
+      const {libName} = await inquirer.prompt({
+        name: 'libName',
+        message: '请输入库名称'
+      })
+      anwsers.libName = libName
+    }
+
     anwsers.name = name
     const spinner = ora('正在下载模板...')
     spinner.start()

@@ -2,11 +2,10 @@ const glob = require('glob')
 const fs = require('fs')
 const handlebars = require('handlebars')
 module.exports = ({name, ...answers}) => {
-  const files = glob.sync(`${name}/**`)
+  const files = glob.sync(`${name}/**/*.*`)
   const meta = {
     name,
-    description: answers.description,
-    author: answers.author
+    ...answers
   }
   files.forEach(fileName => {
     try {
